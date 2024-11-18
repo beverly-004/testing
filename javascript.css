@@ -1,0 +1,177 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /*background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);*/
+  overflow: hidden;
+  color: #340b0b;
+  padding: 0;
+
+}
+
+h2{color:#000000;
+}
+
+
+.light {
+  background-color: #c3bac0;
+  color:#c3bac0;
+}
+
+.dark {
+  background-color: #8b0066;
+
+  color: #ffffff;
+}
+.container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(153, 134, 134, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 20s forwards;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  margin: 10px 0 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  color:rgb(210, 194, 194);
+  background-color:rgb(12, 11, 12);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color:rgb(79, 79, 110);
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+
+.theme-toggle-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+  
+  
+  
+/*
+.wrapper{
+
+  position: absolute;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient 90deg, rgba(2,0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%;
+
+}
+
+.box div{
+  position: absolute;
+  width: 60px;
+  height:60px;
+  border: 6px solid rgba(255,255,255,0) ;
+  background-color: transparent;
+
+}
+
+.box div:nth-child(1){
+  top:12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(2)
+{
+  top:70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+  top:17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+  top:20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5){
+  top:67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6){
+  top:80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7){
+  top:60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8){
+  top:32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9){
+  top:90%;
+  left:25%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10){
+  top:20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+
+*/
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to JavaScript</title>
+  <link rel="stylesheet" href="javascript.css">
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+
+
+<body>
+
+  
+
+
+  <div class="container">
+    
+    <form onsubmit="updateGreeting(); return false;">
+        <h1> Welcome to JavaScript, <span id="user-name"></span>!</h1>
+        <p class="intro-text">Click the button below to explore the magic of JavaScript!</p>
+        <input type="text" id="name-input" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+        <button id="themeToggle" onclick="toggleTheme()">Switch to Dark Mode</button>
+        <h2>Random Quote Generator</h2> 
+        
+
+      
+        <main> 
+          <p id="quote-display">Click the button to get a random quote!</p> 
+          <button onclick="generateQuote()">Get Quote</button> 
+        
+        </main> 
+
+    
+
+      
+
+    </form>
+    <button onclick="animation()">Celebrate</button>
+    
+</div>
+
+
+
+
+  
+
+
+<script>
+  
+  
+  //function getRandomNumber() {return Math.floor(Math.random() * 4) + 1;}//
+// Function to toggle the theme//
+
+function toggleTheme() {
+  const body = document.body;
+  const button = document.getElementById("themeToggle");
+
+  // Check current theme and toggle
+  if (body.classList.contains("light")) {
+      body.classList.remove("light");
+      body.classList.add("dark");
+      button.innerText = "Switch to Light Mode";
+  } else {
+      body.classList.remove("dark");
+      body.classList.add("light");
+      button.innerText = "Switch to Dark Mode";
+  }
+}
+      
+</script>
+
+<script>
+    function updateGreeting() {
+        // Update the span with the name "Bev"
+        document.getElementById("user-name").textContent = "Bev";
+        var val = document.getElementById('name-input').value;
+        if(val){
+            document.getElementById('user-name').textContent = val
+        }
+        else{
+          document.getElementById('user-name').textContent = ""
+        }
+    }
+    
+</script>
+  
+
+
+  <script src="myscript.js">
+  </script>
+
+</body>
+</html>
+  
+    
+ 
